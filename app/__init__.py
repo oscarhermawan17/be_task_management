@@ -2,6 +2,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
+from flask_cors import CORS
+import os
 
 db = SQLAlchemy()
 migrate = Migrate()
@@ -14,6 +16,10 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
     jwt.init_app(app)
+
+    # Set CORS to allow requests from http://localhost:3017
+    origins = os.environ.get('CORS_ORIGINS', '').split(',')
+    CORS(app, resources={r"/*": {"origins": origins}})
 
     from app.routes import bp as routes_bp
     app.register_blueprint(routes_bp)

@@ -31,7 +31,7 @@ def signin():
     if user is None or not user.check_password(password):
         return jsonify({'error': 'Invalid credentials'}), 401
     access_token = create_access_token(identity=user.id)
-    return jsonify({'access_token': access_token})
+    return jsonify({'token': access_token})
 
 @bp.route('/tasks', methods=['POST'])
 @jwt_required()
