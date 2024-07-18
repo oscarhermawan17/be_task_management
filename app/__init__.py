@@ -21,7 +21,10 @@ def create_app():
     origins = os.environ.get('CORS_ORIGINS', '').split(',')
     CORS(app, resources={r"/*": {"origins": origins}})
 
-    from app.routes import bp as routes_bp
-    app.register_blueprint(routes_bp)
+    from app.routes.authRoute import bp as auth_bp
+    from app.routes.taskRoute import bp as task_bp
+
+    app.register_blueprint(auth_bp)
+    app.register_blueprint(task_bp)
 
     return app
