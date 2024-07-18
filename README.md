@@ -45,4 +45,13 @@ Technologies Used:
 ### 4. How To Run Unit Test ?
 -
 
+### 5. List of API
+| How to ?                | URL                      | Method | Need Token ? | Body |
+| ------------------------| ------------------------ | ------ |--------------|------|
+| Sign to App             | <code>/signin</code>     | POST   | No        | username, and password |
+| Sign upp                | <code>/signup</code>     | POST   | No        | username, and password |
+| Create a new Task       | <code>/tasks</code>      | POST   | Yes       | title, description, and status |
+| Get all tasks           | <code>/tasks</code>      | GET    | Yes       | - |
+| Update an existing task | <code>/tasks/:id</code>  | PUT    | Yes       | title, description, and status |
+| Delete a task           | <code>/task/:id</code>   | DELETE | Yes       | - |
 
