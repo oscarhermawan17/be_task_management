@@ -37,9 +37,9 @@ Technologies Used:
   <li>Run <code>python -m venv venv</code> or <code>python3 -m venv venv</code> . It would create a venv (stands for "virtual environment") folder in the root folder</li>
   <li>If you see venv folder in the root foolder. Then run <code>source venv/bin/activate</code> for Mac/Linux, or <code>.\venv\Scripts\activate</code> for Powershell on Windows</li>
   <li>Run <code>pip install -r requirements.txt</code> . This command will download all modules and may take a while.</li>
-  </li>Run <code>python seeder.py</code> or <code>python3 seeder.py</code>. This command will create new tables and populate the user and task tables with data, allowing us to log in using the <code>username: oscar</code> and <code>password: oscar</code>"</li>
-  </li>Run <code>flask run</code>. This command will run our application in development mode."</li>
-  </li>To check our app is running well, check <code>http://localhost:port/</code>. If our app running well, it would send content "Hello, Flask!.
+  <li>Run <code>python seeder.py</code> or <code>python3 seeder.py</code>. This command will create new tables and populate the user and task tables with data, allowing us to log in using the <code>username: oscar</code> and <code>password: oscar</code>"</li>
+  <li>Run <code>flask run</code>. This command will run our application in development mode."</li>
+  <li>To check our app is running well, check <code>http://localhost:port/</code>. If our app running well, it would send content "Hello, Flask!.</li>
 </ul>
 
 ### 4. How To Run Unit Test ?
