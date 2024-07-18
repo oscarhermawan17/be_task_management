@@ -2,7 +2,7 @@
 Front End Task Management
 
 ### 1. Overview of this application
-This is a RESTful API app that helps users view, create, edit, and delete their tasks. The frontend can be seen [here](https://github.com/oscarhermawan17/fe_task_management)
+This is a RESTful API app that helps users view, create, edit, and delete their tasks. <br/>
 Technologies Used:
 <ul>
   <li>Python</li>
@@ -11,6 +11,7 @@ Technologies Used:
   <li>PostgreSQL</li>
   <li>SQL Alchemy</li>
 </ul>
+The frontend can be seen [here](https://github.com/oscarhermawan17/fe_task_management)
 
 
 ### 2. Minimun Requirement
