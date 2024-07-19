@@ -17,9 +17,12 @@ def create_app():
     migrate.init_app(app, db)
     jwt.init_app(app)
 
-    # Set CORS to allow requests from http://localhost:3017
-    origins = os.environ.get('CORS_ORIGINS', '').split(',')
-    CORS(app, resources={r"/*": {"origins": origins}})
+    cors_origins = os.environ.get('CORS_ORIGINS', '')
+    print(f"CORS_ORIGINS environment variable: {cors_origins}")
+    originsCors = cors_origins.split(',')
+    print(f"Parsed CORS_ORIGINS: {originsCors}")
+
+    CORS(app, origins=originsCors, supports_credentials=True)
 
     from app.routes.authRoute import bp as auth_bp
     from app.routes.taskRoute import bp as task_bp
