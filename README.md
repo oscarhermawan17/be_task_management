@@ -11,6 +11,7 @@ Technologies Used:
   <li>PostgreSQL</li>
   <li>SQL Alchemy</li>
 </ul>
+App running on [here](http://203.194.112.12:3017) with default username: oscar, and password: oscar
 The frontend can be seen [here](https://github.com/oscarhermawan17/fe_task_management)
 
 
